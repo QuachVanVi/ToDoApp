@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple To-Do List</title>
+  <link rel="stylesheet" href="./todo.css">
+</head>
+<body>
+<div class="todo-container">
+  <h1 >Att Göra Lista<img src="pic.png" alt="Logo" style="width:54px; height:auto; margin-left:1px;position:relative; top:5px;">
+</h1>
+  <div class="input-section">
+    <form id="todo-form">
+      <input type="text" id="todo-input" placeholder="Skriv din uppgift här">
+      <button type="submit" class="btn btn-primary">
+        <i class="fa-solid fa-plus"></i> Lägg till
+      </button>
+    </form>
+  </div>
+  <ul id="todo-list"></ul>
+  <button id="clear" class="btn btn-clear">Töm Allt</button>
+   <button id="homepage" onclick="window.location.href='../../index.html'">Tillbaka till Startsidan</button>
+</div>
+
+<script type="module" src="todo.js"></script>
+
+</body>
+</html>

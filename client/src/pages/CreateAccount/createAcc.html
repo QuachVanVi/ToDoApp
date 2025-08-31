@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./createAcc.css">
+    <script type="module" src="./createAcc.js"></script>
+    <title>Skapa ett Konto</title>
+</head>
+<body>
+    <hr />
+    <div class="container-order">
+         <a href="../admin/admin.html" class="button primary-btn">Hem</a>
+
+            
+            <div class="form-section">
+                <h2 class="form-title">Lägg till Användare</h2>
+                <form id="CreateAccountForm">
+                    <div class="form-controls">
+                        <label for="firstName" class="required">Förnamn</label>
+                        <input type="text" name="firstName" id="firstName" required>
+                  
+                    </div>
+                    <div class="form-controls">
+                        <label for="lastName" class="required">Efternamn</label>
+                        <input type="text" name="lastName" id="lastName" required>
+            
+                    </div>
+                    <div class="form-controls">
+                        <label for="email" class="required">E-post</label>
+                        <input type="email" name="email" id="email" required>
+                    
+                    </div>
+                    <div class="form-controls">
+                        <label for="password">Lösenord</label>
+                        <input type="password" name="password" id="password">
+                    </div>
+                    <div class="form-controls">
+                        <label for="role" class="required">Roll</label>
+                        <select name="role" id="role" required>
+                            <option value="User">User</option>
+                            <option value="Admin">Admin</option>
+                        </select>   
+                    <button type="submit">Skapa konto</button>
+                </form>
+            </div>
+        </div>
+</body>
+</html>

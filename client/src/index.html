@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="home.css" />
+    <script type="module" src="./index.js"></script>
+    <title>To-Do List</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="button-container">
+          <button
+            id="createAccountBtn"
+            class="button primary-btn"
+            style="display: none">
+            Skapa Konto
+          </button>
+        </div>
+      </section>
+      <!-- <hr /> -->
+
+      <div class="container">
+        <!-- Centered login box -->
+        <div class="center-box">
+          <div id="loginForm">
+            <h1>To-Do List App</h1>
+            <p class="description">
+              Välkommen till din personliga to-do list app.
+            </p>
+            <h2>Logga in</h2>
+            <input
+              type="text"
+              id="username"
+              placeholder="Användarnamn eller e-post" />
+            <input type="password" id="password" placeholder="Lösenord" />
+            <button id="login">Logga in</button>
+            <button id="logout">Logga ut</button>
+            <div id="welcomeMessage"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
